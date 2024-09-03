@@ -1,0 +1,12 @@
+.lang {
+    display:flex ;
+    flex-direction:row-reverse
+}
+
+.lang div {
+    margin-right: 0.5rem;
+}
+
+.lang select {
+    border: none;
+}

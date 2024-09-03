@@ -1,0 +1,27 @@
+.header {
+    display: flex;
+    width: 100%;
+    height: 4rem;
+    align-items: center;
+    border-bottom: .1px solid rgb(197, 196, 196);
+}
+
+.contact {
+    display: flex;
+    width: 50%;
+    justify-content: flex-start;
+}
+
+.contact p {
+    margin-right: 1rem;
+}
+
+.ico {
+   padding:3px;
+}
+
+.lang {
+    display: flex;
+    width: 50%;
+    flex-direction: row;
+}
