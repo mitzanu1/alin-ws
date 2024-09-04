@@ -4,7 +4,7 @@
 }
 
 .main h1 {
-    margin: 5rem 0;
+    margin: 5rem 0 10rem 0;
     font-size: var(--title--font-size);
     text-align: center;
 }

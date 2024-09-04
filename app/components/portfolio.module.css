@@ -15,3 +15,26 @@
     margin-bottom:  5rem;
     font-size: 1.2rem;
 }
+
+.grid {
+    display: grid;
+    grid-template-areas:
+        'card card'
+        'card card';
+    grid-gap:2rem
+}
+
+.card {
+    border: 1px solid black;
+    border-radius: var(--border-radius);
+    height: 400px;
+}
+
+.img {
+    height: 60%;
+    border-bottom: 1px solid black;
+}
+
+.desc {
+    padding: 1rem;
+}
