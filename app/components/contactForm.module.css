@@ -1,0 +1,40 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(207, 207, 207);
+    padding: 5%;
+    margin: 1rem;
+    background-color: white;
+    grid-gap: 1.5rem
+}
+
+.main input {
+    height: 3rem;
+    font-size: 1.2rem;
+    padding: 1rem;
+    background-color:rgb(238, 237, 237);
+    border:none;
+    min-width: 100px
+}
+
+.detailsBox {
+    display: flex;
+    flex-direction: row-reverse;
+    grid-gap: 1.5rem;
+}
+
+.main textarea {
+    font-size: 1.2rem;
+    padding: 1rem;
+    background-color:rgb(238, 237, 237);
+    border:none;
+    resize: none;
+}
+
+.btn {
+    max-width: 200px;
+    align-self: flex-end;
+    font-size: 1.2rem;
+    padding: 1rem 1.5rem;
+    cursor: pointer;
+}
