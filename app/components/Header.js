@@ -11,12 +11,12 @@ export default function Header() {
     const phone = <FontAwesomeIcon 
         icon={faPhone} 
         style={{width:'15px', height:'15px'}}
-        color="teal"
+        color="white"
         />
     const envelope = <FontAwesomeIcon 
         icon={faEnvelope}
         style={{width:'15px', height:'15px'}}
-        color="teal"
+        color="white"
         
         />
 
@@ -24,7 +24,7 @@ export default function Header() {
         <div className={styles.header} id='home'>
             <div className={styles.contact}>
             <span className={styles.ico}>{phone}</span><p>{'406 967 (727) 40+'}</p>
-            <span className={styles.ico}>{envelope}</span><p>{'contact@alinbiz.ro'}</p>
+            <span className={styles.ico}>{envelope}</span><p>{'contact@alinbiz.ro '}</p>
             </div>
             <div 
              className={styles.lang}

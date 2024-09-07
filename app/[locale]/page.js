@@ -25,8 +25,8 @@ export default async function Home({ params: { locale } }) {
         <Navigation />
         <Main />
         <TechStack />
-        <Team />
         <Portfolio />
+        <Team />
         <Contact />
         <Footer />
       </main>

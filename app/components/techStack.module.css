@@ -1,12 +1,12 @@
 .main {
-    width: 100%;
-    margin-top: 10rem ;
+    max-width: var(--max-width);
 }
 
 .main h1 {
-    margin: 5rem 0 10rem 0;
+    margin: 12.5rem 0 10rem 0;
     font-size: var(--title--font-size);
     text-align: center;
+    color:var(--color1--color)
 }
 
 .list {
@@ -16,4 +16,12 @@
 
 .list p {
     text-align: center;
+    font-family: var(--font-source-serif-4);
+
+}
+
+.list div {
+    display: flex;
+    flex-direction: column;
+    grid-gap:0.5rem
 }

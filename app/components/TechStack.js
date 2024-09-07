@@ -7,6 +7,7 @@ export default function TechStack() {
   const { t } = useTranslation()
 
     return (
+        <div className='wrap bg2'>
         <section className={styles.main} id='techStach'>
             <h1>{t('ts-title')}</h1>
             <article className={styles.list}>
@@ -36,5 +37,6 @@ export default function TechStack() {
                 </div>                    
             </article>
         </section>
+        </div>
     )
 }

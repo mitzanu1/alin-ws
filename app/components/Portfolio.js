@@ -7,6 +7,7 @@ export default function Portfolio () {
   const { t } = useTranslation()
 
     return (
+        <div className='wrap bg3'>
         <section className={styles.main} id='portfolio'>
             <h1>Portfolio</h1>
             <div className={styles.grid}>
@@ -44,5 +45,6 @@ export default function Portfolio () {
                 </div>
             </div>
         </section>
+        </div>
     )
 }

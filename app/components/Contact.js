@@ -24,6 +24,7 @@ const envelope = <FontAwesomeIcon
   />
 
     return (
+      <div className='wrap bg5'>
         <section className={styles.main} id='contact'>
             <div className={styles.contact}>
               <h4>{t('contact-det')}</h4>
@@ -50,5 +51,6 @@ const envelope = <FontAwesomeIcon
               <ContactForm />
             </div>
         </section>
+      </div>
     )
 }

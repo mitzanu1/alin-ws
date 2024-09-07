@@ -1,12 +1,12 @@
 .main {
-    width: 100%;
-    margin-top: 10rem ;
+    width: var(--max-width);
 }
 
 .main h1 {
-    margin: 5rem 0;
+    margin: 12.5rem 0 5rem;
     font-size: var(--title--font-size);
     text-align: center;
+    color: var(--color1--color);
 }
 
 

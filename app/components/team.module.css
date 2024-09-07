@@ -1,83 +1,78 @@
 .main {
-    width: 100%;
-    margin-top: 10rem;
+    width: var(--max-width);
+    padding-bottom: 5rem;
 }
 
 .main h1 {
     text-align: center;
     font-size: var(--title--font-size);
-    margin: 5rem 0;
+    margin: 12.5rem 0 4rem;
+    color:var(--color1--color)
 }
 
 .mp {
     text-align: center;
     margin-bottom:  5rem;
     font-size: 1.2rem;
+    font-family: var(--font-source-serif-4);
 }
 
 .list {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    grid-row-gap:50px;
-    margin-top: 50px;
     justify-content: space-around;
 }
 
 .card {
-    width: 250px;
-    height: auto;
-    text-align: center;
-    margin-right: 3%;
-    padding-left: 10px;
-    padding-right: 10px;
+width: 550px;
+height: 400px;
+background-color: white;
+border-radius: var(--border-radius);
+box-shadow: 0px 3px 16px 1px rgba(186,186,186,1);
+background-image: url('/quote.svg');
+background-repeat: no-repeat;
+background-size: 2rem;
+background-position: 1rem 1rem;
+
 }
 
-.block {
-    height: 360px;
-    text-align: center;
-    background-color: #fff;
-    border: 2px solid #000;
-    border-radius: 18px;
-    padding-bottom: 0;
+.desc {
+    height: 65%;
+    padding: 3rem;
+    font-family: var(--font-source-serif-4);
+    line-height: 1.4;
+    color: rgb(97, 97, 97);
 }
 
-.logo {
-    min-height: 165px;
-    grid-column-gap: 16px;
-    grid-row-gap: 16px;
-    background-color: #f7fbfd;
-    border: 1px #000;
-    border-top-width: 2px;
-    border-bottom-style: solid;
-    border-radius: 20px 20px 0 0;
-    grid-template-rows: auto auto;
-    grid-template-columns: 1fr 1fr;
-    grid-auto-columns: 1fr;
-    justify-content: center;
-    align-items: center;
-    padding-left: 16px;
-    padding-right: 16px;
+.desc p {
+    text-align: center;
+}
+
+.personal {
     display: flex;
 }
 
-
-.logo img {
-    text-align: left;
-    margin-bottom: 0;
-    padding-left: 10px;
-    padding-right: 10px;
-    display: inline-block;
-    position: static;
-    max-width: 100%;
+.img{
+    width: 40%;
+    text-align: right;
 }
 
-.info h3 {
-    text-align: center;
-    margin: 0.5rem 0;
+.img img {
+    border-radius: 50%;
+    width: 100px;
 }
 
-.info p {
-    text-align: center;
-    margin-top: 1rem;
+.det {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    grid-gap: 0.7rem;
+    padding-left: 5rem;
+    justify-content: center;
+    color: rgb(97, 97, 97);
+    font-family: var(--font-source-serif-4);
+}
+
+.det h4 {
+    color:var(--color1--color);
+    font-size: 1.4rem;
 }

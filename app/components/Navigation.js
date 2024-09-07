@@ -3,6 +3,7 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import styles from './navigation.module.css'
 import Link from "next/link";
+import Image from 'next/image';
 
 export default function Navigation() {
   const [display, setDisplay] = React.useState('flex')
@@ -14,7 +15,14 @@ export default function Navigation() {
     
     return (
         <nav className={styles.nav}>
-          <section className={styles.logo}>Logo</section>
+          <section className={styles.logo}>
+            <Image 
+              src={'/logo.png'}
+              alt='Logo'
+              width={300}
+              height={150}
+            />
+          </section>
           <div 
             className={styles.menubtn}
             onClick={()=> toogleView()}
@@ -25,15 +33,15 @@ export default function Navigation() {
               </svg>
             </div>
           </div>
-          <section>
+          <section className={styles.linksContainer}>
             <ul 
               className={styles.links}
               style={{display:display}}
             >
                 <li><Link href='#home'>{t('home')}</Link></li>
                 <li><Link href='#techStach'>{t('techStack')}</Link></li>
-                <li><Link href='#team'>{t('team')}</Link></li>
                 <li><Link href='#portfolio'>{t('portfolio')}</Link></li>
+                <li><Link href='#team'>{t('team')}</Link></li>
                 <li><Link href='#contact'>{t('contact')}</Link></li>                
             </ul>
           </section>

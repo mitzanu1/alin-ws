@@ -1,7 +1,7 @@
 .main {
     display: flex;
-    width: 100%;
-    margin: 10rem  0;
+    max-width: var(--max-width);
+    margin: 12.5rem 0 5rem 0;
 }
 
 .main h1 {

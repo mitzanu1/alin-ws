@@ -1,9 +1,21 @@
-import { Inter } from "next/font/google";
+import { Roboto, Source_Serif_4 } from "next/font/google";
 import "./globals.css";
 import i18nConfig from '@/i18nConfig';
 import { dir } from 'i18next';
 
-const inter = Inter({ subsets: ["latin"] });
+export const roboto = Roboto({ 
+  subsets: ["latin"], 
+  weight:['300', '500', '900'],
+  display:'swap',
+  variable:'--font-roboto'
+});
+
+export const source_serif_4 = Source_Serif_4({ 
+  subsets: ["latin"], 
+  weight:['300', '500', '900'],
+  display:'swap',
+  variable:'--font-source-serif-4'
+});
 
 export const metadata = {
   title: "Alin's WS",
@@ -17,7 +29,7 @@ export function generateStaticParams() {
 export default function RootLayout({ children, params: { locale } }) {
   return (
     <html lang={locale} dir={dir(locale)}>
-      <body className={inter.className}>
+      <body className={[`${source_serif_4.variable} ${roboto.variable}`]}>
         {children}
       </body>
     </html>

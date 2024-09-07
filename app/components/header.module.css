@@ -1,19 +1,28 @@
 .header {
     display: flex;
-    width: 100%;
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100vw;
     height: 4rem;
     align-items: center;
-    border-bottom: .1px solid rgb(197, 196, 196);
+    justify-content: space-around;
+    background-color: var(--btn-bg--color);
 }
 
 .contact {
     display: flex;
     width: 50%;
-    justify-content: flex-start;
+    justify-content: center;
+    color: var(--color3--color);
 }
 
 .contact p {
-    margin-right: 1rem;
+    margin-left: 0.3rem;
+}
+
+.contact span {
+    margin-left: 1rem;
 }
 
 .ico {
@@ -24,4 +33,5 @@
     display: flex;
     width: 50%;
     flex-direction: row;
+    justify-content: center;
 }

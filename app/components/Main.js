@@ -7,10 +7,12 @@ export default function Main () {
   const { t } = useTranslation()
 
     return (
+        <div className='wrap bg1'>
         <section className={styles.main}>
             <h1>{t('main-title')}</h1>
             <p>{t('main-article')}</p>    
-            <button>{'406 967 (727) 40+'} :{t('call-us')} </button>       
+            <button className={styles.glow}>{'406 967 (727) 40+'} :{t('call-us')} </button>       
         </section> 
+        </div>
     )
 }
