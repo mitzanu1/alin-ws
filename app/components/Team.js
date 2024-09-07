@@ -20,10 +20,7 @@ export default function Team () {
                 </div>
                 <div className={styles.personal}>
                   <div className={styles.img}>
-                    <img 
-                      src='team1.png'
-                      alt='Alin'
-                    />
+                    <img  src='team1.png' alt='Alin'/>
                   </div>
                   <div className={styles.det}>
                     <h4>{t('t1-name')}</h4>
@@ -37,10 +34,7 @@ export default function Team () {
                 </div>
                 <div className={styles.personal}>
                   <div className={styles.img}>
-                    <img 
-                      src='team2.png'
-                      alt='Mihai Babet'
-                    />
+                    <img src='team2.png' alt='Mihai Babet'/>
                   </div>
                   <div className={styles.det}>
                     <h4>{t('t2-name')}</h4>
