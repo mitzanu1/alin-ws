@@ -1,6 +1,8 @@
 'use client'
-import styles from './team.module.css'
+
 import { useTranslation } from 'react-i18next';
+
+import styles from './team.module.css'
 
 
 
@@ -9,8 +11,8 @@ export default function Team () {
   const { t } = useTranslation()
 
     return (
-      <div className='wrap bg4'>
-        <section className={styles.main} id='team'>
+      <div className='wrap bg4' id='team'>
+        <section className={styles.main} >
             <h1>{t('team-title')}</h1>
             <p className={styles.mp}>{t('team-intro')}</p>
             <div className={styles.list}>
@@ -24,7 +26,7 @@ export default function Team () {
                   </div>
                   <div className={styles.det}>
                     <h4>{t('t1-name')}</h4>
-                    <p>FOUNDER & CEO</p>
+                    <p>CO-FOUNDER</p>
                   </div>
                 </div>
               </div>
@@ -38,7 +40,7 @@ export default function Team () {
                   </div>
                   <div className={styles.det}>
                     <h4>{t('t2-name')}</h4>
-                    <p>FOUDER & CEO</p>
+                    <p>CO-FOUDER</p>
                   </div>
                 </div>
               </div>

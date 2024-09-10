@@ -7,7 +7,9 @@
   --color3--color: white;
   --btn-bg--color:#e30d9c;
   --bg1--color:white;
-  --bg2--color:#f4f5f5
+  --bg2--color:#f4f5f5;
+  --mobileTitle--font-size:2rem;
+  --mobileText--font-size:1rem;
 }
 
 
@@ -22,13 +24,10 @@
 html,
 body {
   max-width: 100vw;
+  min-height: 100vh;
   overflow-x: hidden;
   scroll-behavior: smooth;
   font-family: var(--font-roboto);
-}
-
-body {
-  background: white;
 }
 
 a {
@@ -45,22 +44,30 @@ a {
 }
 
 .bg1 {
+  scroll-margin-top: 12rem;
   background-image: url('/heroshape.svg');
   background-size: 70%;
 }
 
 .bg2 {
-
+  scroll-margin-top: 10rem;
   background-image: url('/bgshape.svg');
   background-size:cover;
-  height: calc(100vh - 10rem);
 }
 
 .bg3 {
+  scroll-margin-top: 10rem;
 
 }
 
 .bg4 {
+  scroll-margin-top: 10rem;
   background-image: url('/bgshape.svg');
+  background-size:cover;
+}
+
+.bg5 {
+  scroll-margin-top: 12rem;
+  background-image: url('/contactBg.jpg');
   background-size:cover;
 }

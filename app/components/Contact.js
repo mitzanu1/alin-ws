@@ -1,56 +1,29 @@
 'use client'
-import styles from './contact.module.css'
-import ContactForm from './ContactForm'
+
+import { useContext } from 'react';
 import { useTranslation } from 'react-i18next';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons'
-import { config } from '@fortawesome/fontawesome-svg-core';
-config.autoAddCss = false; 
+import { ModalContext } from './App';
+
+import styles from './contact.module.css'
 
 
 export default function Contact () {
 
+  const { setModal } = useContext(ModalContext)
   const { t } = useTranslation()
 
-  const phone = <FontAwesomeIcon 
-  icon={faPhone} 
-  style={{width:'40px', height:'40px'}}
-  color="teal"
-  />
-const envelope = <FontAwesomeIcon 
-  icon={faEnvelope}
-  style={{width:'40px', height:'40px'}}
-  color="teal"
-  />
-
     return (
-      <div className='wrap bg5'>
-        <section className={styles.main} id='contact'>
-            <div className={styles.contact}>
-              <h4>{t('contact-det')}</h4>
-              <h1>{t('contact-title')}</h1>
-              <p className={styles.mp}>{t('contact-desc')}</p>  
-              <div className={styles.container}> 
-                  <div className={styles.dets}>
-                    <div>{phone}</div>
-                    <div className={styles.detsDesc}>
-                      <p><strong>:{t('our-phone')}</strong></p>
-                      <p>406 967 (727) 40 +</p>
-                    </div>
-                  </div>             
-                  <div className={styles.dets}>
-                     <div>{envelope}</div>
-                     <div className={styles.detsDesc}>
-                       <p><strong>:{t('our-email')}</strong></p>
-                       <p>contact@alinbiz.com</p>
-                     </div>
-                   </div>
-                </div>             
-            </div>
-            <div className={styles.form}>
-              <ContactForm />
-            </div>
+      <div className='wrap bg5' id='contact'>
+        <section className={styles.main} >
+          <h1>{t('contact-title')}</h1>
+          <p>{t('contact-det')}</p>
+          <button
+            onClick={()=>setModal('flex')}
+          >{t('contact-btn')}
+          </button>
         </section>
       </div>
     )
 }
+
+

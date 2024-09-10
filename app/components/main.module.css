@@ -42,3 +42,27 @@
     background-repeat: no-repeat;
 }
 
+@media screen and (max-width:991px) {
+
+    .main{
+        padding: 1rem;
+        align-items: center;
+    }
+
+    .main h1 {
+        font-size: var(--mobileTitle--font-size);
+        margin-top: 12.5rem;
+        text-align: center;
+    }
+
+    .main p {
+        text-align: center;
+        font-size: var(--mobileText--font-size);
+    }
+
+    .main button {
+        margin-top: 1rem;
+    }
+
+}
+

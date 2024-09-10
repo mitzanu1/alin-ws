@@ -3,7 +3,7 @@
 }
 
 .main h1 {
-    margin: 12.5rem 0 5rem;
+    margin: 5rem 0 5rem;
     font-size: var(--title--font-size);
     text-align: center;
     color: var(--color1--color);
@@ -21,20 +21,54 @@
     grid-template-areas:
         'card card'
         'card card';
-    grid-gap:2rem
+    grid-gap:2rem;
+    margin: 0 10%;
 }
 
 .card {
-    border: 1px solid black;
+    border: 1px solid rgb(168, 168, 168);
     border-radius: var(--border-radius);
     height: 400px;
 }
 
+.card:hover {
+    box-shadow: 0px 0px 10px 1px rgba(138, 138, 138, 0.5);
+}
+
 .img {
     height: 60%;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid rgb(168, 168, 168);
+    border-top-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
+    background-image: url('/avoc.png');
+    background-size:cover;
+    background-repeat: no-repeat;
 }
 
 .desc {
-    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 2rem;
+}
+
+.desc h4 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid rgb(54, 255, 47);
+    height: 2rem;
+    max-width: fit-content;
+}
+
+@media screen and (max-width:991px) {
+    .grid {
+        display: grid;
+        grid-template-areas:
+            'card'
+            'card'
+            'card'
+            'card';
+        grid-gap:2rem;
+    }
+
 }

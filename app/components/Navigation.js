@@ -1,18 +1,25 @@
 'use client'
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import styles from './navigation.module.css'
 import Link from "next/link";
 import Image from 'next/image';
 
+import styles from './navigation.module.css'
+
 export default function Navigation() {
-  const [display, setDisplay] = React.useState('flex')
+  const [display, setDisplay] = React.useState('none')
     
   const { t } = useTranslation()
   const toogleView = () => {
      display === 'none' ? setDisplay('flex') : setDisplay('none')
   }
-    
+  
+  const closeMenu = ()=>{
+    if(window.innerWidth < 991) {
+      setDisplay('none')
+    }
+  }
+
     return (
         <nav className={styles.nav}>
           <section className={styles.logo}>
@@ -36,13 +43,32 @@ export default function Navigation() {
           <section className={styles.linksContainer}>
             <ul 
               className={styles.links}
-              style={{display:display}}
             >
-                <li><Link href='#home'>{t('home')}</Link></li>
+                <li ><Link href='#home'>{t('home')}</Link></li>
                 <li><Link href='#techStach'>{t('techStack')}</Link></li>
                 <li><Link href='#portfolio'>{t('portfolio')}</Link></li>
                 <li><Link href='#team'>{t('team')}</Link></li>
                 <li><Link href='#contact'>{t('contact')}</Link></li>                
+            </ul>
+            <ul 
+              className={styles.mobileLinks}
+              style={{display:display}}
+            >
+                <li
+                  onClick={()=>closeMenu()}
+                ><Link href='#home'>{t('home')}</Link></li>
+                <li
+                  onClick={()=>closeMenu()}
+                ><Link href='#techStach'>{t('techStack')}</Link></li>
+                <li
+                  onClick={()=>closeMenu()}
+                ><Link href='#portfolio'>{t('portfolio')}</Link></li>
+                <li
+                  onClick={()=>closeMenu()}
+                ><Link href='#team'>{t('team')}</Link></li>
+                <li
+                  onClick={()=>closeMenu()}
+                ><Link href='#contact'>{t('contact')}</Link></li>                
             </ul>
           </section>
         </nav>

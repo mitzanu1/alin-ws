@@ -1,10 +1,11 @@
 'use client';
 
+import i18nConfig from '../../i18nConfig.js';
 import { useRouter } from 'next/navigation';
 import { usePathname } from 'next/navigation';
 import { useTranslation } from 'react-i18next';
-import i18nConfig from '../../i18nConfig.js';
 import { RO, GB } from "country-flag-icons/react/3x2"
+
 import styles from './languageChanger.module.css'
 
 export default function LanguageChanger() {
@@ -25,7 +26,6 @@ export default function LanguageChanger() {
     date.setTime(date.getTime() + days * 24 * 60 * 60 * 1000);
     const expires = date.toUTCString();
     document.cookie = `NEXT_LOCALE=${newLocale};expires=${expires};path=/`;
-    console.log(currentLocale)
   
     if (
       currentLocale === i18nConfig.defaultLocale &&

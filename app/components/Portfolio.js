@@ -1,48 +1,54 @@
 'use client'
-import styles from './portfolio.module.css'
 import { useTranslation } from 'react-i18next';
+
+import styles from './portfolio.module.css'
 
 export default function Portfolio () {
 
   const { t } = useTranslation()
 
     return (
-        <div className='wrap bg3'>
-        <section className={styles.main} id='portfolio'>
-            <h1>Portfolio</h1>
+        <div className='wrap bg3' id='portfolio'>
+        <section className={styles.main} >
+            <h1>{t('pf-title')}</h1>
             <div className={styles.grid}>
                 <div className={styles.card}>
-                    <div className={styles.img}>
-                        <img src='' />
-                    </div>
+                    <a href='https://www.avochat.net/' target='_blank'>
+                    <div className={styles.img}></div>
                     <div className={styles.desc}>
-                        <p>{t('portfolio1-desc')}</p>
+                        <h4>{t('pf1-name')}</h4>
+                        <p>{t('pf1-desc')}</p>
                     </div>
+                    </a>
                 </div>
                 <div className={styles.card}>
-                    <div className={styles.img}>
-                        <img src='' />
-                    </div>
+                    <a href='https://www.avochat.net/' target='_blank'>
+                    <div className={styles.img}></div>
                     <div className={styles.desc}>
-                        <p>{t('portfolio1-desc')}</p>
+                        <h4>{t('pf1-name')}</h4>
+                        <p>{t('pf1-desc')}</p>
                     </div>
+                    </a>
                 </div>
                 <div className={styles.card}>
-                    <div className={styles.img}>
-                        <img src='' />
-                    </div>
+                    <a href='https://www.avochat.net/' target='_blank'>
+                    <div className={styles.img}></div>
                     <div className={styles.desc}>
-                        <p>{t('portfolio1-desc')}</p>
+                        <h4>{t('pf1-name')}</h4>
+                        <p>{t('pf1-desc')}</p>
                     </div>
+                    </a>
                 </div>
                 <div className={styles.card}>
-                    <div className={styles.img}>
-                        <img src='' />
-                    </div>
+                    <a href='https://www.avochat.net/' target='_blank'>
+                    <div className={styles.img}></div>
                     <div className={styles.desc}>
-                        <p>{t('portfolio1-desc')}</p>
+                        <h4>{t('pf1-name')}</h4>
+                        <p>{t('pf1-desc')}</p>
                     </div>
+                    </a>
                 </div>
+                
             </div>
         </section>
         </div>

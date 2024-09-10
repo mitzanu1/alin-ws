@@ -1,40 +1,44 @@
 'use client'
-import styles from './techStack.module.css'
+
 import { useTranslation } from 'react-i18next';
+
+import styles from './techStack.module.css'
 
 export default function TechStack() {
 
   const { t } = useTranslation()
 
     return (
-        <div className='wrap bg2'>
-        <section className={styles.main} id='techStach'>
+        <div className='wrap bg2' id='techStach'>
+        <section className={styles.main} >
             <h1>{t('ts-title')}</h1>
             <article className={styles.list}>
-                <div>
+              <ul>
+                <li>
                   <img src="ts.png" alt='TypeScript'  />
                   <p>TypeScript</p>
-                </div>
-                <div>
+                </li>
+                <li>
                   <img src="js.png" alt='JavaScript'  />
                   <p>JavaScript</p>
-                </div>
-                <div>
+                </li>
+                <li>
                   <img src="react.png" alt='React'  />
                   <p>React</p>
-                </div>
-                <div>
+                </li>
+                <li>
                   <img src="njs.png" alt='Next.js'  />
                   <p>Next.js</p>
-                </div>
-                <div>
+                </li>
+                <li>
                   <img src="gby.png" alt='Gatsby'  />
                   <p>Gatsby</p>
-                </div>
-                <div>
+                </li>
+                <li>
                   <img src="css.png" alt='HTML/CSS'  />
                   <p>HTML/CSS</p>
-                </div>                    
+                </li>      
+              </ul>              
             </article>
         </section>
         </div>
