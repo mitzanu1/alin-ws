@@ -3,7 +3,7 @@
     display: flex;
     flex-direction: column;
     border: 1px solid rgb(207, 207, 207);
-    padding: 5%;
+    padding: 2% 5% 7%;
     margin: 1rem;
     background-color: white;
     grid-gap: 1.5rem;
@@ -79,8 +79,27 @@
 }
 
 .close {
-    text-align: center;
-    color: rgb(39, 39, 255);
+    text-align: left;
     cursor: pointer;
-    text-decoration: underline;
+    font-size: 1.5rem;
+    font-family: var(--font-roboto);
+    width: 1%;
+    height: 1rem;
+}
+
+@media screen and (max-width:991px) {
+    .main {
+        max-width: calc(100vw - 10%);
+    }
+
+    .detailsBox {
+        flex-direction: column;
+    }
+
+    .main input {
+        height: 1rem;
+    }
+    .main textarea {
+        height: 5rem;
+    }
 }

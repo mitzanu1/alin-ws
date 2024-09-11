@@ -22,7 +22,7 @@
         'card card'
         'card card';
     grid-gap:2rem;
-    margin: 0 10%;
+    margin: 0 10% 5rem;
 }
 
 .card {

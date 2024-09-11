@@ -86,6 +86,7 @@ background-position: 1rem 1rem;
 
     .mp {
         font-size: var(--mobileTest--font-size);
+        margin: 0 5% 3rem;
     }
 
     .list {

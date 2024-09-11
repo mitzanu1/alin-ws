@@ -5,18 +5,23 @@ import Link from "next/link";
 import Image from 'next/image';
 
 import styles from './navigation.module.css'
+import LanguageChanger from './LanguageChanger';
 
 export default function Navigation() {
   const [display, setDisplay] = React.useState('none')
-    
+  const [opacity,setOpaciy] = React.useState(0)
+
   const { t } = useTranslation()
   const toogleView = () => {
-     display === 'none' ? setDisplay('flex') : setDisplay('none')
+    display === 'none' ? setDisplay('flex') : setDisplay('none')
+    display === 'none' ? setTimeout(()=>setOpaciy(1),10) : setOpaciy(0)
+    
   }
   
   const closeMenu = ()=>{
     if(window.innerWidth < 991) {
-      setDisplay('none')
+      setOpaciy(0)
+      setTimeout(()=>setDisplay('none'),300)
     }
   }
 
@@ -49,10 +54,12 @@ export default function Navigation() {
                 <li><Link href='#portfolio'>{t('portfolio')}</Link></li>
                 <li><Link href='#team'>{t('team')}</Link></li>
                 <li><Link href='#contact'>{t('contact')}</Link></li>                
+                <li className={styles.lng}><LanguageChanger /></li>
             </ul>
+
             <ul 
               className={styles.mobileLinks}
-              style={{display:display}}
+              style={{display:display,opacity:opacity}}
             >
                 <li
                   onClick={()=>closeMenu()}
@@ -68,7 +75,8 @@ export default function Navigation() {
                 ><Link href='#team'>{t('team')}</Link></li>
                 <li
                   onClick={()=>closeMenu()}
-                ><Link href='#contact'>{t('contact')}</Link></li>                
+                ><Link href='#contact'>{t('contact')}</Link></li>
+                <li className={styles.lng}><LanguageChanger /></li>                
             </ul>
           </section>
         </nav>

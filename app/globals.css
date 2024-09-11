@@ -41,33 +41,25 @@ a {
   background-color: var(--bg1--color);
   background-repeat: no-repeat;
   background-position: right;
+  scroll-margin-top: 5rem;
 }
 
 .bg1 {
-  scroll-margin-top: 12rem;
   background-image: url('/heroshape.svg');
-  background-size: 70%;
+  background-size: cover;
 }
 
 .bg2 {
-  scroll-margin-top: 10rem;
   background-image: url('/bgshape.svg');
   background-size:cover;
 }
 
-.bg3 {
-  scroll-margin-top: 10rem;
-
-}
-
 .bg4 {
-  scroll-margin-top: 10rem;
   background-image: url('/bgshape.svg');
   background-size:cover;
 }
 
 .bg5 {
-  scroll-margin-top: 12rem;
   background-image: url('/contactBg.jpg');
   background-size:cover;
 }

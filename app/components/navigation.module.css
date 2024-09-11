@@ -1,7 +1,7 @@
 .nav {
     display: flex;
     position: fixed;
-    top:4rem;
+    top:0;
     left: 0;
     width: 100%;
     height: 6rem;
@@ -16,9 +16,15 @@
     align-items: center;
 }
 
+.logo img {
+    height: 200px;
+    width: auto;
+}
+
 .linksContainer {
     display: flex;
     align-items: center;
+
 }
 
 .links {
@@ -74,11 +80,21 @@
     justify-content: center;
     font-size: 1.1rem;
     font-weight: 500;
+    width: 100%;
 }
+
+.lng:hover {
+    border: none
+}
+.lng div:hover {
+    border: none;
+}
+
 
 @media screen and (max-width:991px) {
     .menubtn {
         display: flex;
+
     }
 
     .links {
@@ -91,9 +107,14 @@
         flex-direction: column;
         align-items: center;
         right: 0;
-        top:9.5rem;
+        top:6rem;
         background-color: rgb(250, 250, 250);
-        width: 100%;
+        border-bottom: 1px solid rgb(206, 205, 205);
+        border-bottom-left-radius: 12px;
+        border-bottom-right-radius: 12px;
+        box-shadow: 0px 5px 5px 0px rgba(92, 92, 92, 0.3);
+        transition: opacity 1s allow-discrete;
+
     }
 
     .mobileLinks li {
@@ -117,4 +138,7 @@
         justify-content: space-between;
     }
 
+    .lng {
+        margin-bottom: 1.5rem;
+    }
 }

@@ -18,6 +18,10 @@ export default function ContactForm() {
         <form className={styles.main}
             onClick={(e)=>{e.stopPropagation()}}
         >
+            <p className={styles.close}
+                onClick={()=>setModal('none')}
+            >
+              ᙭</p>
             <p>{t('form-head')}</p>
             <p>{t('form-head-email')}: <span>contact@alinbiz.ro</span></p>
             <div className={styles.detailsBox}>
@@ -39,10 +43,7 @@ export default function ContactForm() {
             <button
                 className={styles.btn}
             >{t('send-message')}</button>
-            <p className={styles.close}
-                onClick={()=>setModal('none')}
-            >
-                {t('form-close')}</p>
+            
         </form>
         </div>
     )

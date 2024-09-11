@@ -24,7 +24,7 @@ export default function App () {
     return (
      <>
       <ModalContext.Provider value={value}>
-        <Header />
+        {/* <Header /> */}
         <Navigation />
         <Main />
         <TechStack />
