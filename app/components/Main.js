@@ -13,7 +13,7 @@ export default function Main () {
             <h1>{t('main-title')}</h1>
             <p>{t('main-article')}</p>    
             <a href='tel:+40727967407'>
-              <button className={styles.glow}>{'406 967 (727) 40+'} :{t('call-us')} </button>       
+              <button className={styles.glow}>{t('call-us')} : +40 727 967 406 </button>       
             </a>
         </section> 
         </div>

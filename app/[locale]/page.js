@@ -17,7 +17,9 @@ export default async function Home({ params: { locale } }) {
       locale={locale}
       resources={resources}
     >
-      <main className={styles.main}>
+      <main 
+        dir='ltr'
+        className={styles.main}>
         <App />
       </main>
     </TranslationsProvider>

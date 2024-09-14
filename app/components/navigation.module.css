@@ -53,9 +53,12 @@
     color:#4348ea
 }
 
-.links li :hover,
-.mobileLinks li:hover {
+.links li :hover {
     border-bottom: 2px solid var(--color1--color);
+}
+
+.mobileLinks li:hover {
+    border-bottom: none 
 }
 
 .menubtn {
@@ -121,8 +124,14 @@
         display: flex;
         color: #28224b;
         text-transform: none;
+        width: 100%;
+        justify-content: center;
     }
 
+    .mobileLinks li a {
+        width: 100%;
+        text-align: center;
+    }
     .mobileLinks li a {
         text-align: center;
     }
@@ -134,11 +143,10 @@
     }
 
     .nav {
-        flex-direction: row-reverse;
         justify-content: space-between;
     }
 
     .lng {
-        margin-bottom: 1.5rem;
+        margin: 0.5rem 0 1.5rem;
     }
 }

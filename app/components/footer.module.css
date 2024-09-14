@@ -1,23 +1,62 @@
 .main {
     display: flex;
+    justify-content: space-between;
     width: 100%;
-    height: 15vh;
     border-top: 1px solid gray;
     align-items: center;
 
 }
 
 .logo {
-    width: 50%;
     margin-left: 5%;
+    width: 33%;
 }
 
+
 .cr {
-    width: 50%;
     text-align: right;
     margin-right: 5%;
+    width: 33%;
+    color: rgb(61, 61, 61);
 }
 
 .logo img {
-    width: 20%;
+    width: 250px;
+    height: 150px;
+
+}
+
+.icons {
+    display: flex;
+    width:33%;
+    justify-content: space-around;
+}
+
+.icons svg {
+    color:blue
+}
+
+@media screen and (max-width:991px) {
+    .main {
+        flex-direction: column;
+        grid-gap: 1rem;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .icons,
+    .logo,
+    .cr {
+        width: 100%;
+        text-align: center;
+    }
+    .cr {
+        margin: 2rem 0 3rem;
+    }
+    .icons {
+        max-width: 300px; 
+    }
+    .logo {
+        margin: 0;
+    }
 }

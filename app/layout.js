@@ -18,8 +18,8 @@ export const source_serif_4 = Source_Serif_4({
 });
 
 export const metadata = {
-  title: "Alin's WS",
-  description: "Awaiting description",
+  title: "Bit Genesys",
+  description: "Digital excellence",
 };
 
 export function generateStaticParams() {
