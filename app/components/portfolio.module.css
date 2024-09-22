@@ -1,5 +1,5 @@
 .main {
-    width: var(--max-width);
+    max-width: var(--max-width);
 }
 
 .main h1 {
@@ -30,8 +30,6 @@
     border-radius: var(--border-radius);
     height: 400px;
     box-shadow: 0px 0px 10px 1px rgba(138, 138, 138, 0.5);
-
-
 }
 
 .card:hover {
@@ -69,9 +67,54 @@
         grid-template-areas:
             'card'
             'card'
-            'card'
+            'card' 
             'card';
         grid-gap:2rem;
+        margin: 0 10% 5rem;
+    }
+    .main h1 {
+        font-size: var(--mobileTitle--font-size);
+    }
+    .card {
+        box-shadow: none;
+    }
+    .card:hover {
+        box-shadow: none;
+    }
+}
+@media screen and (max-width:550px) {
+    .grid {
+        display: none;
     }
 
+    .main h1 {
+        font-size: var(--mobileTitle--font-size);
+    }
+    .card {
+        box-shadow: none;
+    }
+    .card:hover {
+        box-shadow: none;
+    }
+}
+
+.slide {
+   border: none;
+}
+
+.crsBtn {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    border: none;
+    text-align: center;
+    font-size: 1rem;
+    margin: 1rem 0;
+    cursor: pointer;
+}
+
+.sldBtn {
+    display: flex;
+    justify-content: center;
+    grid-gap: 1rem;
 }

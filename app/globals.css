@@ -27,6 +27,7 @@ body {
   overflow-x: hidden;
   scroll-behavior: smooth;
   font-family: var(--font-roboto);
+
 }
 
 a {
@@ -53,6 +54,9 @@ a {
   background-size:cover;
 }
 
+.bg3 {
+}
+
 .bg4 {
   background-image: url('/bgshape.svg');
   background-size:cover;
@@ -61,4 +65,19 @@ a {
 .bg5 {
   background-image: url('/contactBg.jpg');
   background-size:cover;
+}
+
+.carousel {
+  margin: 0 10%;
+  display: none;
+}
+.sliderTray___-vHFQ {
+  display: flex!important;
+  grid-gap:10px
+}
+
+@media screen and (max-width:550px) {
+  .carousel {
+    display: block;
+  }
 }
