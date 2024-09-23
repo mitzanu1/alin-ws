@@ -98,6 +98,9 @@
     .card:hover {
         box-shadow: none;
     }
+    .desc {
+        align-items: flex-end;
+    }
 }
 
 .slide {
@@ -120,3 +123,4 @@
     justify-content: center;
     grid-gap: 1rem;
 }
+

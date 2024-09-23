@@ -60,6 +60,8 @@ export default function Portfolio () {
             naturalSlideWidth={300}
             naturalSlideHeight={420}
             totalSlides={3}
+            dir='rtl'
+            currentSlide={2}
         >
             <Slider>
                 <Slide 

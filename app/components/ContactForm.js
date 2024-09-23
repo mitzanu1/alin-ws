@@ -45,7 +45,7 @@ export default function ContactForm() {
             >
               ᙭</h6>
             <p>{t('form-head')}</p>
-            <p>{t('form-head-email')}: <span>contact@alinbiz.ro</span></p>
+            <p>{t('form-head-email')}: <span>contact@bitgenesys.ro</span></p>
             <div className={styles.detailsBox}>
                 <input 
                   type="text"

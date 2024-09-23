@@ -21,7 +21,7 @@ export default function Navigation() {
   const closeMenu = ()=>{
     if(window.innerWidth < 991) {
       setOpaciy(0)
-      setTimeout(()=>setDisplay('none'),300)
+      setDisplay('none')
     }
   }
 
