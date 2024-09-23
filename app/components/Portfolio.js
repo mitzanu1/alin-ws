@@ -61,9 +61,9 @@ export default function Portfolio () {
             naturalSlideHeight={420}
             totalSlides={3}
             dir='rtl'
-            currentSlide={2}
+            currentSlide={0}
         >
-            <Slider>
+            <Slider className={styles.slider}>
                 <Slide 
                     index={0}
                     className={styles.slide}
@@ -108,8 +108,8 @@ export default function Portfolio () {
                 </Slide>
             </Slider>
             <div className={styles.sldBtn}>
-                <ButtonBack className={styles.crsBtn}>{'<'}</ButtonBack>
-                <ButtonNext className={styles.crsBtn}>{'>'}</ButtonNext>
+                <ButtonNext className={styles.crsBtn}>{'<'}</ButtonNext>
+                <ButtonBack className={styles.crsBtn}>{'>'}</ButtonBack>
             </div>
         </CarouselProvider>
     </>

@@ -103,8 +103,14 @@
     }
 }
 
+.slider {
+    transform: scaleX(1)!important;
+}
+
 .slide {
    border: none;
+   transform: scaleX(1)!important;
+
 }
 
 .crsBtn {
