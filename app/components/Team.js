@@ -40,7 +40,7 @@ export default function Team () {
                   </div>
                   <div className={styles.det}>
                     <h4>{t('t2-name')}</h4>
-                    <p>CO-FOUDER</p>
+                    <p>CO-FOUNDER</p>
                   </div>
                 </div>
               </div>

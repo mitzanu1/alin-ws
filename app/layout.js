@@ -19,7 +19,7 @@ export const source_serif_4 = Source_Serif_4({
 
 export const metadata = {
   title: "Bit Genesys",
-  description: "Digital excellence",
+  description: "BitGenesys provides innovative, user-focused web and mobile applications that empower businesses to grow. Our vision is to transform ideas into seamless digital experiences through cutting-edge technology and strategic collaboration",
 };
 
 export function generateStaticParams() {

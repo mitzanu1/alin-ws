@@ -7,7 +7,7 @@ export default function Home() {
   const router = useRouter();
 
   React.useEffect(()=>{
-    router.push('/ro')
+    router.push('/en')
   },[])
 
   return (

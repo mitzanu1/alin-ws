@@ -9,6 +9,7 @@
     grid-gap: 1.5rem;
     max-width: 800px;
     border-radius: var(--border-radius);
+    top:12%;
 }
 
 .wrap {
