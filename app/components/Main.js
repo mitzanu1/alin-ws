@@ -18,7 +18,7 @@ export default function Main () {
             <button 
               className={styles.glow}
               onClick={()=>setModal('flex')}
-            >{t('call-us')}</button>                  
+            >{t('contact-btn')}</button>                  
         </section> 
         </div>
     )
