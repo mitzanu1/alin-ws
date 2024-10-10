@@ -2,6 +2,7 @@ import { Roboto, Source_Serif_4 } from "next/font/google";
 import "./globals.css";
 import i18nConfig from '@/i18nConfig';
 import { dir } from 'i18next';
+import Head from "next/head";
 
 export const roboto = Roboto({ 
   subsets: ["latin"], 
@@ -20,7 +21,10 @@ export const source_serif_4 = Source_Serif_4({
 export const metadata = {
   title: "Bit Genesys",
   description: "BitGenesys provides innovative, user-focused web and mobile applications that empower businesses to grow. Our vision is to transform ideas into seamless digital experiences through cutting-edge technology and strategic collaboration",
+
 };
+
+
 
 export function generateStaticParams() {
   return i18nConfig.locales.map(locale => ({ locale }));
