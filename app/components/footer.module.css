@@ -2,9 +2,8 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
-    border-top: 1px solid gray;
     align-items: center;
-
+    margin: 2rem 0;
 }
 
 .logo {
@@ -20,11 +19,6 @@
     color: rgb(61, 61, 61);
 }
 
-.logo img {
-    width: 250px;
-    height: 150px;
-
-}
 
 .icons {
     display: flex;
@@ -59,8 +53,6 @@
     }
     .logo {
         margin: 0;
-    }
-    .logo img {
-        height: 180px;
+        margin-bottom: 1rem;
     }
 }

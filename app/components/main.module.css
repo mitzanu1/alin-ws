@@ -27,7 +27,7 @@
 }
 
 .main button {
-    width: 300px;
+    width: 250px;
     height: 75px;
     font-size: 1.3rem;
     text-align: center;
@@ -39,6 +39,7 @@
     border: none;
     background-image: url('/buttonwave.svg');
     background-repeat: no-repeat;
+    font-family: var(--font-source-serif-4);
 }
 
 @media screen and (max-width:991px) {

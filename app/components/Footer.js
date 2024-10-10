@@ -1,4 +1,5 @@
 'use client'
+import Image from 'next/image'
 import styles from './footer.module.css'
 
 
@@ -8,9 +9,11 @@ export default function Footer () {
     return (
         <footer className={styles.main}>
             <div className={styles.logo}>
-                <img 
-                    src='logo.png' 
+                <Image 
+                    src='/logo.png' 
                     alt='Logo'
+                    width={250}
+                    height={100}
                 />
             </div>
             <div className={styles.icons}>

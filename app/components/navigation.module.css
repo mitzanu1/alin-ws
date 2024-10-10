@@ -17,11 +17,6 @@
     align-items: center;
 }
 
-.logo img {
-    height: 200px;
-    width: auto;
-}
-
 .linksContainer {
     display: flex;
     align-items: center;

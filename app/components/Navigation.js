@@ -31,8 +31,8 @@ export default function Navigation() {
             <Image 
               src={'/logo.png'}
               alt='Logo'
-              width={300}
-              height={150}
+              width={225}
+              height={90}
             />
           </section>
           <div 
