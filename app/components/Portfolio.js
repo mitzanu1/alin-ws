@@ -5,7 +5,7 @@ import 'pure-react-carousel/dist/react-carousel.es.css';
 
 import styles from './portfolio.module.css'
 
-import  Carousel  from './Carousel';
+// import  Carousel  from './Carousel';
 
 export default function Portfolio () {
 
@@ -18,48 +18,40 @@ export default function Portfolio () {
             <h1>{t('pf-title')}</h1>
             <div className={styles.grid}>
                 <div className={styles.card}>
-                    <a href='https://www.avochat.net/' target='_blank'>
-                    <div className={styles.img}></div>
+                    <div className={`${styles.img} ${styles.img0}`}></div>
                     <div className={styles.desc}>
-                        <h4>{t('pf1-name')}</h4>
+                        <h4  className={styles.b1}>{t('pf1-name')}</h4>
                         <p>{t('pf1-desc')}</p>
                     </div>
-                    </a>
                 </div>
                 <div className={styles.card}>
-                    <a href='https://www.avochat.net/' target='_blank'>
-                    <div className={styles.img}></div>
+                    <div className={`${styles.img} ${styles.img1}`}></div>
                     <div className={styles.desc}>
-                        <h4>{t('pf1-name')}</h4>
-                        <p>{t('pf1-desc')}</p>
+                        <h4  className={styles.b2}>{t('pf2-name')}</h4>
+                        <p>{t('pf2-desc')}</p>
                     </div>
-                    </a>
                 </div>
                 <div className={styles.card}>
-                    <a href='https://www.avochat.net/' target='_blank'>
-                    <div className={styles.img}></div>
+                    <div className={`${styles.img} ${styles.img2}`}></div>
                     <div className={styles.desc}>
-                        <h4>{t('pf1-name')}</h4>
-                        <p>{t('pf1-desc')}</p>
+                        <h4  className={styles.b3}>{t('pf3-name')}</h4>
+                        <p>{t('pf3-desc')}</p>
                     </div>
-                    </a>
                 </div>
                 <div className={styles.card}>
-                    <a href='https://www.avochat.net/' target='_blank'>
-                    <div className={styles.img}></div>
+                    <div className={`${styles.img} ${styles.img3}`}></div>
                     <div className={styles.desc}>
-                        <h4>{t('pf1-name')}</h4>
-                        <p>{t('pf1-desc')}</p>
+                        <h4  className={styles.b4}>{t('pf4-name')}</h4>
+                        <p>{t('pf4-desc')}</p>
                     </div>
-                    </a>
                 </div>
             </div>
         </section>
     </div>
         <CarouselProvider
             naturalSlideWidth={300}
-            naturalSlideHeight={420}
-            totalSlides={3}
+            naturalSlideHeight={490}
+            totalSlides={4}
             dir='rtl'
             currentSlide={0}
         >
@@ -69,13 +61,11 @@ export default function Portfolio () {
                     className={styles.slide}
                 >
                     <div className={styles.card}>
-                        <a href='https://www.avochat.net/' target='_blank'>
-                            <div className={styles.img}></div>
+                            <div className={`${styles.img} ${styles.img0}`}></div>
                             <div className={styles.desc}>
-                                <h4>{t('pf1-name')}</h4>
+                                <h4 className={styles.b1}>{t('pf1-name')}</h4>
                                 <p>{t('pf1-desc')}</p>
                             </div>
-                        </a>
                     </div>
                 </Slide>
                 <Slide 
@@ -83,13 +73,11 @@ export default function Portfolio () {
                     className={styles.slide}
                 >
                     <div className={styles.card}>
-                        <a href='https://www.avochat.net/' target='_blank'>
-                            <div className={styles.img}></div>
+                            <div className={`${styles.img} ${styles.img1}`}></div>
                             <div className={styles.desc}>
-                                <h4>{t('pf1-name')}</h4>
-                                <p>{t('pf1-desc')}</p>
+                                <h4 className={styles.b2}>{t('pf2-name')}</h4>
+                                <p>{t('pf2-desc')}</p>
                             </div>
-                        </a>
                     </div>
                 </Slide>
                 <Slide 
@@ -97,13 +85,23 @@ export default function Portfolio () {
                     className={styles.slide}
                 >
                     <div className={styles.card}>
-                        <a href='https://www.avochat.net/' target='_blank'>
-                            <div className={styles.img}></div>
+                            <div className={`${styles.img} ${styles.img2}`}></div>
                             <div className={styles.desc}>
-                                <h4>{t('pf1-name')}</h4>
-                                <p>{t('pf1-desc')}</p>
+                                <h4  className={styles.b3}>{t('pf3-name')}</h4>
+                                <p>{t('pf3-desc')}</p>
                             </div>
-                        </a>
+                    </div>
+                </Slide>
+                <Slide 
+                    index={3}
+                    className={styles.slide}
+                >
+                    <div className={styles.card}>
+                            <div className={`${styles.img} ${styles.img3}`}></div>
+                            <div className={styles.desc}>
+                                <h4 className={styles.b4}>{t('pf4-name')}</h4>
+                                <p>{t('pf4-desc')}</p>
+                            </div>
                     </div>
                 </Slide>
             </Slider>

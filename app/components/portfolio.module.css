@@ -21,16 +21,16 @@
     grid-template-areas:
         'card card'
         'card card';
-    grid-gap:2rem;
+    grid-gap:5rem;
     margin: 0 10% 5rem;
 }
 
 .card {
     border: 1px solid rgb(168, 168, 168);
     border-radius: var(--border-radius);
-    height: 400px;
+    height: 460px;
     max-width: 600px;
-    box-shadow: 0px 0px 10px 1px rgba(138, 138, 138, 0.5);
+    box-shadow: 1px 1px 6px 2px rgb(197, 197, 197);
 }
 
 .card:hover {
@@ -42,9 +42,24 @@
     border-bottom: 1px solid rgb(168, 168, 168);
     border-top-left-radius: var(--border-radius);
     border-top-right-radius: var(--border-radius);
-    background-image: url('/avoc.png');
     background-size:cover;
     background-repeat: no-repeat;
+}
+
+.img0 {
+    background-image: url('/avoc.png');
+}
+
+.img1 {
+    background-image: url('/hubview.png');
+}
+
+.img2 {
+    background-image: url('/gamedesign.png');
+}
+
+.img3 {
+    background-image: url('/invoice.png');
 }
 
 .desc {
@@ -57,9 +72,18 @@
 .desc h4 {
     font-size: 1.3rem;
     margin-bottom: 1rem;
-    border-bottom: 1px solid rgb(54, 255, 47);
     height: 2rem;
     max-width: fit-content;
+}
+
+.b1 {border-bottom: 1px solid rgb(54, 255, 47);}
+.b2 {border-bottom: 1px solid rgb(255, 2, 107);}
+.b3 {border-bottom: 1px solid rgb(3, 28, 255);}
+.b4 {border-bottom: 1px solid rgb(255, 251, 2);}
+
+.desc p {
+    font-size: 1rem;
+    line-height: 1.3;
 }
 
 @media screen and (max-width:991px) {
@@ -73,6 +97,7 @@
             'card';
         grid-gap:2rem;
         margin: 0 10% 5rem;
+        justify-content: center;
     }
     .main h1 {
         font-size: var(--mobileTitle--font-size);
@@ -101,6 +126,10 @@
     .desc {
         align-items: flex-end;
     }
+    .desc p {
+        font-size: 0.9rem;
+        line-height: 1.5;
+    }
 }
 
 .slider {
@@ -109,8 +138,7 @@
 
 .slide {
    border: none;
-   transform: scaleX(1)!important;
-
+   transform: scaleX(1)!important;   
 }
 
 .crsBtn {
